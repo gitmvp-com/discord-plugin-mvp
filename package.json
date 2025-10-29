@@ -1,0 +1,18 @@
+{
+    "name": "discord-plugin-mvp",
+    "version": "1.0.0",
+    "description": "Simplified MVP of Vencord - A Discord browser extension with a basic plugin system",
+    "private": true,
+    "scripts": {
+        "build": "node build.mjs",
+        "dev": "node build.mjs --watch"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "esbuild": "^0.25.1"
+    },
+    "packageManager": "pnpm@10.4.1",
+    "engines": {
+        "node": ">=18"
+    }
+}
