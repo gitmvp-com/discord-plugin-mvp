@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "minimum_chrome_version": "111",
+    "name": "Discord Plugin MVP",
+    "version": "1.0.0",
+    "description": "A simple Discord plugin system - MVP of Vencord",
+    "author": "MVP Demo",
+    "icons": {
+        "128": "icon.png"
+    },
+    "host_permissions": [
+        "*://*.discord.com/*"
+    ],
+    "permissions": [],
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": ["*://*.discord.com/*"],
+            "js": ["dist/plugin.js"],
+            "all_frames": true
+        }
+    ]
+}
